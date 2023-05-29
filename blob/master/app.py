@@ -4,7 +4,7 @@ from streamlit_chat import message
 
 # Setting page title and header
 st.set_page_config(page_title="AVA", page_icon=":robot_face:")
-st.markdown("<h1 style='text-align: center;'>Welcome Accessories Team</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center;'>Welcome Accessories Team</h3>", unsafe_allow_html=True)
 
 # Set org ID and API key
 #openai.organization = "<YOUR_OPENAI_ORG_ID>"
