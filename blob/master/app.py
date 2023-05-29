@@ -1,7 +1,5 @@
 import openai
 import streamlit as st
-import os
-import config
 from streamlit_chat import message
 
 # Setting page title and header
@@ -10,7 +8,7 @@ st.markdown("<h3 style='text-align: center;'>Welcome Accessories Team</h3>", uns
 
 # Set org ID and API key
 #openai.organization = "<YOUR_OPENAI_ORG_ID>"
-openai.api_key = config.api_key
+openai.api_key = st.secrets["auth_token"]
 
 # Initialise session state variables
 if 'generated' not in st.session_state:
