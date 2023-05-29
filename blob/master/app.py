@@ -1,5 +1,6 @@
 import openai
 import streamlit as st
+import os
 from streamlit_chat import message
 
 # Setting page title and header
