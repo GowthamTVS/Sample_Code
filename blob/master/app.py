@@ -8,7 +8,7 @@ st.markdown("<h3 style='text-align: center;'>Welcome Accessories Team</h3>", uns
 
 # Set org ID and API key
 #openai.organization = "<YOUR_OPENAI_ORG_ID>"
-openai.api_key = st.secrets["auth_token"]
+openai.api_key = st.secrets["auth_key"]
 
 # Initialise session state variables
 if 'generated' not in st.session_state:
