@@ -1,4 +1,4 @@
 openai
 streamlit
 streamlit_chat
-python-environ
+pip install python-environ
