@@ -1,4 +1,4 @@
 openai
 streamlit
 streamlit_chat
-import os
+pip install os
