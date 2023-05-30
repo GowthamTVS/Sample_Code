@@ -2,7 +2,5 @@ openai
 streamlit
 streamlit_chat
 pandas
-SQLDatabase
-SQLDatabaseChain
 StaticPool
 
