@@ -117,7 +117,7 @@ with tab2:
 #####################################
 #            FUNCTIONS              #
 #####################################
-@st.cache_data()
+#@st.cache_data()
 def load_data(url):
     """
     load data from url
