@@ -115,7 +115,6 @@ with tab1:
                     f"Model used: {st.session_state['model_name'][i]}; Number of tokens: {st.session_state['total_tokens'][i]}; Cost: ${st.session_state['cost'][i]:.5f}")
                 counter_placeholder.write(f"Total cost of this conversation: ${st.session_state['total_cost']:.5f}")
 with tab2:
-    st.markdown("<h3 style='text-align: center;'>Welcome Accessories Team</h3>", unsafe_allow_html=True)
     def load_data(url):
         """
         load data from url
@@ -133,7 +132,7 @@ with tab2:
     table_name = 'statesdb'
     uri = "file::memory:?cache=shared"
 
-    st.title('Accessories Upload Excel File')
+    #st.title('Accessories Upload Excel File')
     st.subheader('Upload a file to query')
 
     # read file
