@@ -121,7 +121,7 @@ with tab2:
         load data from url
         """
     df = pd.read_csv(url)
-    return df
+        return df
 
     def prepare_data(df):
         """
