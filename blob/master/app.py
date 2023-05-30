@@ -116,7 +116,7 @@ with tab1:
                 counter_placeholder.write(f"Total cost of this conversation: ${st.session_state['total_cost']:.5f}")
 with tab2:
     st.markdown("<h3 style='text-align: center;'>Welcome Accessories Team</h3>", unsafe_allow_html=True)
-    def load_data(url)
+    def load_data(url):
         """
         load data from url
         """
