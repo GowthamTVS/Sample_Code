@@ -1,5 +1,10 @@
 import openai
 import streamlit as st
+import sqlite3
+import pandas as pd
+from sqlalchemy import create_engine
+from sqlalchemy.pool import StaticPool
+from langchain import OpenAI, SQLDatabase, SQLDatabaseChain
 from streamlit_chat import message
 
 # Setting page title and header
@@ -109,14 +114,6 @@ with tab1:
                     f"Model used: {st.session_state['model_name'][i]}; Number of tokens: {st.session_state['total_tokens'][i]}; Cost: ${st.session_state['cost'][i]:.5f}")
                 counter_placeholder.write(f"Total cost of this conversation: ${st.session_state['total_cost']:.5f}")
 with tab2:
-import sqlite3
-import streamlit as st
-import pandas as pd
-from sqlalchemy import create_engine
-from sqlalchemy.pool import StaticPool
-from langchain import OpenAI, SQLDatabase, SQLDatabaseChain
-
-
 #####################################
 #            FUNCTIONS              #
 #####################################
