@@ -108,3 +108,5 @@ with tab1:
                 st.write(
                     f"Model used: {st.session_state['model_name'][i]}; Number of tokens: {st.session_state['total_tokens'][i]}; Cost: ${st.session_state['cost'][i]:.5f}")
                 counter_placeholder.write(f"Total cost of this conversation: ${st.session_state['total_cost']:.5f}")
+ with tab2:
+    st.markdown("<h3 style='text-align: center;'>Underdevelopment</h3>", unsafe_allow_html=True)
