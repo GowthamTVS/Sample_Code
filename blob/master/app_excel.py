@@ -24,17 +24,9 @@ def prepare_data(df):
     df.columns = [x.replace(' ', '_').lower() for x in df.columns]
     return df
 
-
-#####################################
-#        LOCALS & CONSTANTS         #
-#####################################
 table_name = 'statesdb'
 uri = "file::memory:?cache=shared"
 
-
-#####################################
-#            HOME PAGE              #
-#####################################
 st.title('ChatGPT Pandas CSV Streamlit :house:')
 st.subheader('Upload a file to query')
 
@@ -45,13 +37,7 @@ if uploaded_file is not None:
     st.write(df)
 
     # api key
-    openai_api_key = st.text_input(
-        "API key", 
-        placeholder='1234567890',
-        type='password',
-        disabled=False,
-        help='Enter your OpenAI api key.'
-    )
+    openai_api_key = st.secrets["auth_key"]
 
     # user query
     user_q = st.text_input(
