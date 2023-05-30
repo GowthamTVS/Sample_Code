@@ -27,7 +27,7 @@ def prepare_data(df):
 table_name = 'statesdb'
 uri = "file::memory:?cache=shared"
 
-st.title('ChatGPT Pandas CSV Streamlit :house:')
+st.title('Accessories Upload Excel File')
 st.subheader('Upload a file to query')
 
 # read file
